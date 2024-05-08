@@ -1,5 +1,5 @@
 #!/bin/bash
-killpid="$(pidof VRisingServer.exe)"
+killpid="$(pgrep -f VRisingServer.exe)"
 while true
 do
 	tail --pid=$killpid -f /dev/null
